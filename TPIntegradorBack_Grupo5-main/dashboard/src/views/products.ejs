@@ -1,0 +1,25 @@
+<%- include("partials/head.ejs") %>
+<%- include("partials/header.ejs") %>
+
+    <hr>
+        <h1 class="page-title"><%= about %></h1>
+    <hr>
+
+    <main id="get-container">
+        <div id="products-container">
+            <ul id="products-list">
+
+                <% products.forEach(prod => { %>
+
+                    <li class="product-item">
+                            <img src="<%= prod.image %> " alt="<%= prod.name %>" class="product-img">
+                            <p>ID: <%= prod.id %> / <%= prod.product_type %> <%= prod.quality %> <%= prod.desc_text %> N°<%= prod.desc_number %> / <strong>Precio: $<%= prod.price %></strong><%= prod.active ? " / [Activo]" : " / [Inactivo]" %></p>
+                    </li>
+
+                <% }) %>
+
+            </ul>
+        </div>
+    </main>
+
+<%- include("partials/footer.ejs") %>
