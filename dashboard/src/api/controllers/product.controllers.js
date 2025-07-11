@@ -19,10 +19,10 @@ export const getActiveProducts = async (request, response) => {
 
     } catch (error) {
 
-        console.log("Error obteniendo productos ", error);
+        console.log("Error obteniendo productos: ", error);
 
         response.status(500).json({
-            error: "Error interno del servidor al obtener productos"
+            error: "Error interno del servidor al obtener productos."
         });
         
     }
