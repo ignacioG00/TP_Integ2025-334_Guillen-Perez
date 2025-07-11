@@ -1,58 +1,94 @@
-🛍️ Fulbo$hop - TP Integrador 2025
-Fulbo$hop es un sistema de comercio online orientado a la venta de camisetas y botines. El proyecto incluye tanto un entorno de frontend (HTML y JavaScript) como una vista administrable en backend utilizando EJS y Express.js.
+🛍️ Fulbo$hop — TP Integrador 2025
+Fulbo$hop es una tienda online ficticia especializada en la venta de camisetas y botines de fútbol. El proyecto está dividido en dos módulos principales:
+
+🔸 Frontend: HTML, CSS y JavaScript
+
+🔸 Backend: Node.js con Express.js y renderizado mediante EJS
+
+Incluye funcionalidades tanto para el cliente como para el administrador, simulando el flujo completo de un ecommerce.
 
 🚀 Tecnologías utilizadas
 Frontend: HTML, CSS, JavaScript
 
 Backend: Node.js, Express.js, EJS
 
-Persistencia: JSON (mock de base de datos)
+Persistencia: Archivos JSON (simulando una base de datos local)
 
 🧑‍💼 Inicio de sesión
-La plataforma ofrece dos formas de autenticación:
+La aplicación ofrece dos formas de acceso:
 
-Login Cliente: El usuario ingresa su nombre para acceder a la tienda.
+👤 Cliente: ingresa su nombre para entrar a la tienda.
 
-Login Admin: Requiere credenciales válidas para acceder al panel de administración.
+🛠️ Administrador: accede mediante credenciales válidas al panel de gestión.
 
 🛒 Funcionalidades para Cliente
-Visualización de productos disponibles.
+Visualización de todos los productos disponibles.
 
-Filtro por tipo de producto (camisetas / botines).
+Filtrado por tipo de producto (camisetas / botines).
 
-Buscador dinámico por nombre o descripción.
+Búsqueda dinámica por texto (nombre, tipo, descripción).
 
-Agregado de productos al carrito.
+Agregado de productos al carrito de compras.
 
 Finalización de compra con generación de ticket.
 
-Encuesta de satisfacción al finalizar.
+Encuesta de satisfacción posterior a la compra.
 
 🔧 Funcionalidades para Administrador
-Crear nuevos productos.
+Crear productos nuevos.
 
-Modificar productos existentes.
+Editar productos existentes.
 
-Marcar productos como inactivos (ocultarlos del cliente).
+Marcar productos como inactivos (no visibles para el cliente).
 
 Eliminar productos.
 
-Visualizar tickets de venta generados.
+Visualizar todos los tickets generados por compras.
 
-Alta de nuevos administradores.
+Agregar nuevos administradores.
 
-📦 Estructura del repositorio
+📁 Estructura del repositorio
 TP_Integ2025-334_Guillen-Perez/
 │
-├── dashboard/               → Backend con vistas EJS
+├── dashboard/               → Backend con Express y vistas EJS
 │   ├── src/
-│   │   ├── controllers/
-│   │   ├── views/           → Vistas de administración
-│   │   └── routes/
+│   │   ├── controllers/     → Lógica de productos, usuarios y tickets
+│   │   ├── views/           → Vistas EJS del panel admin
+│   │   └── routes/          → Rutas backend
 │
-├── frontend/                → Sitio cliente en HTML, CSS y JS
+├── frontend/                → Cliente web hecho con HTML, CSS y JS
 │
-└── README.md                → Información del proyecto
+└── README.md                → Documentación del proyecto
+⚙️ Instalación y ejecución
+🔨 Requisitos
+Node.js instalado
+
+Navegador moderno
+
+💻 Pasos para correr localmente
+bash
+# Cloná el repositorio
+git clone https://github.com/ignacioG00/TP_Integ2025-334_Guillen-Perez.git
+
+# Entrá al backend y instalá dependencias
+cd dashboard
+npm install
+
+# Ejecutá el servidor
+npm start
+📍 Accedé a http://localhost:3000 para ver la aplicación.
+
+🧪 Datos de prueba
+Admin: Usuario: admin Contraseña: clave123
+
+Cliente: Ingresar cualquier nombre para comenzar
+
 📝 Autores
-Este proyecto fue realizado en conjunto por Ignacio Guillen & Gonzalo Pérez, como parte del Trabajo Práctico Integrador para Programacion 3 de la UTN año 2025.
+Este proyecto fue realizado por:
+
+Ignacio Guillen
+
+Gonzalo Pérez
+
+Como parte del Trabajo Práctico Integrador de Programación III — UTN · Año 2025
 
